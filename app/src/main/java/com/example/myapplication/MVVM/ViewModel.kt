@@ -17,4 +17,13 @@ class ViewModel {
     fun attachView(view: View) {
         this.view = view
     }
+
+    fun chageVisble() {
+        if (model.visble) {
+            model.v(false)
+        } else {
+            model.v(true)
+        }
+        view.isVisibl(model.visble)
+    }
 }
